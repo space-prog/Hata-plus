@@ -65,6 +65,7 @@ svg:hover {
 
 .contacts {
     padding: 27px 0;
+    background-color: #fff;
 }
 
 .contacts p {
@@ -362,9 +363,6 @@ h1 {
     padding: 13px 0;
     background-color: #dcdce6;
     text-align: center;
-}
-
-.footer p {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
