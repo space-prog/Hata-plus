@@ -5,6 +5,7 @@
 
 body {
     font-family: "Arial";
+    cursor: url('../cursors/cursor.cur'), auto;
 }
 
 ul {
@@ -13,6 +14,11 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: url('../cursors/test.cur'), auto;
+}
+
+button {
+    cursor: url('../cursors/test.cur');
 }
 
 .wrapper {
