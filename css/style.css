@@ -154,7 +154,6 @@ button {
     padding-top: 43px;
     margin-bottom: 50px;
     display: flex;
-    align-items: flex-start;
     column-gap: 28px;
 }
 
@@ -297,7 +296,7 @@ h1 {
 .navigation {
     min-width: 220px;
     position: sticky;
-    top: 10px;
+    top: 70px;
 }
 
 .navigation p {
