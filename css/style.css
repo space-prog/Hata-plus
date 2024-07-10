@@ -297,6 +297,8 @@ h1 {
     min-width: 220px;
     position: sticky;
     top: 70px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 .navigation p {
