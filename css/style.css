@@ -35,6 +35,9 @@ button {
     background-color: #1f1f56;
     max-height: 55px;
     padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .header a {
@@ -66,6 +69,7 @@ svg:hover {
 .contacts {
     padding: 27px 0;
     background-color: #fff;
+    padding-top: 84px;
 }
 
 .contacts p {
@@ -149,6 +153,8 @@ button {
 .main {
     padding-top: 43px;
     margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
     column-gap: 28px;
 }
 
@@ -290,6 +296,8 @@ h1 {
 
 .navigation {
     min-width: 220px;
+    position: sticky;
+    top: 10px;
 }
 
 .navigation p {
@@ -397,7 +405,7 @@ h1 {
     content: "";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 12px;
     width: 10px;
     height: 10px;
     border-top: 2px solid #666;
