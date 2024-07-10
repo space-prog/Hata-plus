@@ -386,3 +386,27 @@ h1 {
     width: 17px;
     height: 17px;
 }
+
+.test {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+}
+
+.test:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    transform: translateY(-50%) rotate(45deg) scale(0.8);
+    transition: all .4s ease;
+}
+
+.test:hover:after {
+    transform: translateY(-50%) rotate(135deg) scale(0.8);
+    border-color: #fff;
+}
