@@ -377,18 +377,13 @@ h1 {
     color: #9999a6;
 }
 
+.phone-text-1 {
+    padding-left: 11px;
+}
+
 .footer-wrapper {
     display: flex;
     column-gap: 100px;
-}
-
-.phone-text-1 {
-    padding-left: 27px;
-}
-
-.logo {
-    column-gap: 11px;
-    display: flex;
 }
 
 .logo img {
@@ -415,7 +410,94 @@ h1 {
     transition: all .4s ease;
 }
 
-.test:hover:after {
+.navigation li:hover > .test:after {
     transform: translateY(-50%) rotate(135deg) scale(0.8);
     border-color: #fff;
+}
+
+.nav-social a {
+    display: block;
+    background: url(../img/Sprite.png) no-repeat;
+}
+
+a.fb {
+    background-position: 0 -1px;
+    width: 11px;
+    height: 19px;
+}
+
+a.tw {
+    background-position: -12px -3px;
+    width: 19px;
+    height: 17px;
+}
+
+a.in {
+    background-position: -33px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-social {
+    column-gap: 25px;
+}
+
+a.tw:hover {
+    background-position: -12px -25px;
+}
+
+a.in:hover {
+    background-position: -33px -21px;
+}
+
+a.fb:hover {
+    background-position: 0 -22px;
+}
+
+.icon {
+    display: block;
+    position: relative;
+    padding-left: 11px;
+}
+
+.icon:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url(../img/Sprite.png) no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -21px;
+    transition: all .4s ease;
+}
+
+.logo a:before {
+    background-position: -55px -2px;
+    width: 17px;
+    height: 17px;
+}
+
+.mail a:before {
+    background-position: -95px -5px;
+    width: 18px;
+    height: 13px;
+}
+
+.skype a:before {
+    background-position: -74px 0;
+    width: 19px;
+    height: 19px;
+
+}
+
+.skype:hover > a:before {
+    background-position: -74px -21px;
+} 
+
+.mail:hover > a:before {
+    background-position: -95px -26px;
+}
+
+.phone p:hover a:before {
+    background-position: -55px -23px;
 }
