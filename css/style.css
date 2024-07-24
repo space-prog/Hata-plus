@@ -33,6 +33,10 @@
     padding: 0;
 }
 
+button {
+    cursor: url(../cursors/cursor.cur), auto;
+}
+
 body {
     font-family: "Arial";
     cursor: url('../cursors/cursor.cur'), auto;
@@ -44,11 +48,11 @@ ul {
 
 a {
     text-decoration: none;
-    cursor: url('../cursors/test.cur'), auto;
+    cursor: url('../cursors/cursor.cur'), auto;
 }
 
 button {
-    cursor: url('../cursors/test.cur');
+    cursor: url('../cursors/cursor.cur');
 }
 
 .wrapper {
@@ -100,6 +104,7 @@ svg:hover {
     padding: 27px 0;
     background-color: #fff;
     padding-top: 84px;
+    align-items: center;
 }
 
 .contacts p {
