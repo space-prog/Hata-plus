@@ -51,8 +51,15 @@ a {
     cursor: url('../cursors/cursor.cur'), auto;
 }
 
+
 button {
     cursor: url('../cursors/cursor.cur');
+}
+
+.hr1 {
+    width: 100%;
+    border-top: 1px #000;
+    margin-bottom: 31px;
 }
 
 .wrapper {
@@ -109,7 +116,7 @@ svg:hover {
 
 .contacts p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
 }
@@ -149,7 +156,7 @@ svg:hover {
 
 .phone a {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
 }
@@ -157,7 +164,7 @@ svg:hover {
 .mail a,
 .skype a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #25252c;
 }
 
@@ -169,7 +176,7 @@ svg:hover {
 
 button {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #25252c;
     font-weight: bold;
 }
@@ -242,7 +249,7 @@ h1 {
 .text2,
 .text1 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #666;
 }
 
@@ -253,14 +260,13 @@ h1 {
 
 .link a {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #fd8300;
     font-weight: bold;
 }
 
 .p1 {
     font-size: 24px;
-    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -282,13 +288,13 @@ h1 {
 
 .homes span {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.4em;
     color: #9999a6;
 }
 
-.home1 p {
+.name1 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
 }
@@ -297,16 +303,16 @@ h1 {
     height: 153px;
 }
 
-.home2 p {
+.name2 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
 }
 
-.home3 p {
+.name3 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
 }
@@ -353,6 +359,7 @@ h1 {
 }
 
 .sub-menu {
+    border: none;
     max-height: 0;
     visibility: hidden;
 }   
@@ -376,8 +383,11 @@ h1 {
     /* transition: all .5s ease; */
 }
 
-.navigation li {
+.navigation >ul>li {
     background-color: #e4e4ec;
+}
+
+.navigation >ul>li+li {
     border-top: 1px solid #cecedd;
 }
 
@@ -393,7 +403,7 @@ h1 {
 .a1 a,
 .a2 a {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8em;
     color: #666;
     transition: all .4s ease;
 }
@@ -409,7 +419,7 @@ h1 {
     background-color: #dcdce6;
     text-align: center;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
 }
 
