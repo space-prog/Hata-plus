@@ -192,7 +192,8 @@ button {
 }
 
 h1 {
-    padding-bottom: 28px;
+    padding-bottom: 18px;
+    font-family: 'Roboto Slab';
 }
 
 .t1 {
@@ -230,7 +231,7 @@ h1 {
 }
 
 .text1 {
-    padding-bottom: 24px;
+    padding-bottom: 14px;
 }
 
 .text2,
