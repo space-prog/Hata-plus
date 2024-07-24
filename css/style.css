@@ -48,12 +48,12 @@ ul {
 
 a {
     text-decoration: none;
-    cursor: url('../cursors/cursor.cur'), auto;
+    cursor: url('../cursors/tet.cur'), auto;
 }
 
 
 button {
-    cursor: url('../cursors/cursor.cur');
+    cursor: url('../cursors/tet.cur'), auto;
 }
 
 .hr1 {
