@@ -12,11 +12,33 @@
         <div class="header">
             <nav class="wrapper flex-between">
                 <ul class="flex-between nav">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="#">Про компанію</a></li>
-                    <li><a href="second.html">Наші будівлі</a></li>
-                    <li><a href="#">Акції</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li class="menu"><a href="index.html">Головна</a></li>
+                    <li class="menu"><a href="#">Про компанію</a></li>
+                    <li class="menu">
+                        <a href="second.html">Наші будівлі</a>
+                        <div class="test_menu"></div>
+                        <nav class="submenu">
+                            <ul>
+                                <li><a href="#" class="test">Таунхауси</a></li>
+                                <li><a href="#" class="test">Пентхауси</a></li>
+                                <li><a href="#" class="test">Котеджі</a></li>
+                                <li class="submenu2_activator">
+                                    <a href="#" class="test">Собачі будки</a>
+                                    <div class="test_menu2"></div>
+                                    <nav class="submenu2">
+                                        <ul>
+                                            <li><a href="#" class="menu-items">Елітні будки</a></li>
+                                            <li><a href="#" class="menu-items">Для чіхуахуа</a></li>
+                                            <li><a href="#" class="menu-items">Вольєри</a></li>
+                                            <li><a href="#" class="menu-items">Халабуди</a></li>
+                                        </ul>
+                                    </nav>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="menu"><a href="#">Акції</a></li>
+                    <li class="menu"><a href="#">Контакти</a></li>
                 </ul>
                 <ul class="flex-between nav-social">
                     <li><a href="#" class="fb"></a></li>
@@ -50,5 +72,170 @@
             </div>
         </div>
     </header>
+    <main class="main wrapper">
+        <div class="table">
+            <h1 class="h1">Ціни на послуги тимчасового проживання</h1>
+            <p class="p">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною. Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного номера.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Назва котеджу</th>
+                        <th colspan="3">Характеристики будинків</th>
+                        <th rowspan="2">Ціна</th>
+                    </tr>
+                    <tr>
+                        <th>Загальна площа м.кв.</th>
+                        <th>Кількість кімнат</th>
+                        <th>Гараж</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td1">Hamilton Paradise</td>
+                        <td>392</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td class="td2">45 000 $</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Montreal Hourse House</td>
+                        <td>295</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td class="td2">29 750 $</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Edmenton</td>
+                        <td>338</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td class="td2">53 200 $</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Calgary Skyliner</td>
+                        <td>249</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td class="td2">31 000 $</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Quebec Enterprices</td>
+                        <td>392</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td class="td2">110 000 $</td>
+                    </tr>
+                    <tr class="tr_last">
+                        <td class="td1">Alberta Maria</td>
+                        <td>349</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td class="td2">67 500 $</td>
+                    </tr>
+                </tbody>
+            </table>
+            <article>
+                <div class="information">
+                    <p>Час заселення з 14-00, виїзд до 12-00.</p>
+                    <p>Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
+                </div>
+                <a href="#" class="article_a">Ознайомитись з правилами проживання</a>
+            </article>
+            <hr class="hr5">
+            <section class="projects">
+                <p class="p1">Популярні проекти</p>
+                <section class="homes">
+                    <figure class="home1">
+                        <figcaption>
+                            <a href="#">
+                                <picture>
+                                    <img src="img/img2.webp" alt="">
+                                    <source srcset="img/img2.jpg">
+                                </picture>
+                            </a>
+                            <p class="name1"><a href="#">EDMONTON (338 м2)</a></p>
+                            <p><span>Загальна площа будови: 312 м2</span></p>
+                            <p><span>Кількість спалень: 4</span></p>
+                            <p><span>Гараж: 2 авто</span></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="home2">
+                        <figcaption>
+                            <a href="#">
+                                <picture>
+                                    <img src="img/img3.webp" alt="">
+                                    <source srcset="img/img3.jpg">
+                                </picture>
+                            </a>
+                            <p class="name2"><a href="#">MONTREAL (332 м2)</a></p>
+                            <p><span>Загальна площа будови: 290 м2</span></p>
+                            <p><span>Кількість спалень: 3</span></p>
+                            <p><span>Гараж: 2 авто</span></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="home3">
+                        <figcaption>
+                            <a href="#">
+                                <picture>
+                                    <img src="img/img4.webp" alt="">
+                                    <source srcset="img/img4.jpg">
+                                </picture>
+                            </a>
+                            <p class="name3"><a href="#">CALGARY (294 м2)</a></p>
+                            <p><span>Загальна площа будови: 272 м2</span></p>
+                            <p><span>Кількість спалень: 3</span></p>
+                            <p><span>Гараж: 2 авто</span></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="home4">
+                        <figcaption>
+                            <a href="#">
+                                <picture>
+                                    <img src="img/img5.png" alt="">
+                                </picture>
+                            </a>
+                            <p class="name3"><a href="#">RICHMOND (324 м2)</a></p>
+                            <p><span>Загальна площа будови: 242 м2</span></p>
+                            <p><span>Кількість спалень: 3</span></p>
+                            <p><span>Гараж: 3 авто</span></p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="wrapper flex-between">
+                <nav class="flex-between footer-wrapper">
+                    <ul class="a1">
+                        <li><a href="#">Будинки</a></li>
+                        <li><a href="#">Інфраструктура</a></li>
+                        <li><a href="#">Сервіс</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                    <ul class="a2">
+                        <li><a href="#">Про компанію</a></li>
+                        <li><a href="#">Страхування</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <p class="logo">
+                        <a href="tel:+380971002525" class="icon">+38(097) 100-25-25</a>
+                    </p>
+                    <p class="phone-text-1"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                </div>
+                <div class="hataplus">
+                    <p class="mail">
+                        <a href="mailto:hataplus@hata.com.ua" class="icon">hataplus@hata.com.ua</a></p>
+                    <p class="skype">   
+                        <a href="skype:hataplus?chat" class="icon">hataplus</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="footer">&copy; Будівельна компанія “Хата Плюс” 2024.</p>
+    </footer>
 </body>
 </html>
