@@ -224,3 +224,6 @@ button {
     color: #000;
 }
 
+.menu1 > a {
+    padding: 0 10px;
+}
