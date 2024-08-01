@@ -55,6 +55,7 @@ tbody {
 }
 
 td {
+    transition: all .4s ease;
     height: 41px;
     font-size: 14px;
     line-height: 24px;
@@ -63,6 +64,10 @@ td {
 
 article {
     padding-bottom: 33px;
+}
+
+tr:has(td) {
+    cursor: url('../cursors/tet.cur'), auto;
 }
 
 button {
