@@ -40,9 +40,6 @@ th {
 }
 
 table {
-    border: none;
-    overflow: hidden;
-    border-radius: 3px;
     min-width: 960px;
     border-collapse: collapse;
 }
@@ -226,4 +223,9 @@ button {
 
 .menu1 > a {
     padding: 0 10px;
+}
+
+.table {
+    border-radius: 3px;
+    overflow: hidden;
 }
