@@ -109,7 +109,7 @@ svg:hover {
     align-items: center;
 }
 
-.contacts p {
+.contacts > p {
     font-size: 18px;
     line-height: 1.3em;
     color: #25252c;

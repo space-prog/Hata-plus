@@ -40,7 +40,7 @@ th {
 }
 
 table {
-    min-width: 960px;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -140,8 +140,8 @@ button {
     left: 50%;
     transform: translateX(-50%);
     top: 60px;
-    width: 136px;
-    max-height: 130px;
+    min-width: 136px;
+    max-height: 130pxb;
     border-radius: 3px;
     background-color: #e4e4ec;
     display: none;
@@ -218,8 +218,8 @@ button {
     left: calc(100% + 5px);
     color: #000;
     background-color: #e4e4ec;
-    width: 136px;
-    height: 115px;
+    min-width: 136px;
+    min-height: 115px;
 }
 
 .submenu2:before {
