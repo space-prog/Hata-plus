@@ -6,11 +6,9 @@ a {
     cursor: url('../cursors/tet.cur'), auto;
 }
 
-tr,
-td,
-th {
+td + td {
     text-align: center;
-    border: 1px solid #cdcddd;
+    border-left: 1px solid #cdcddd;
 }
 
 th {
@@ -19,6 +17,10 @@ th {
 
 tr {
     transition: all .3s ease;
+}
+
+tr + tr {
+    border-top: 1px solid #cecedd;
 }
 
 tbody tr:hover {
@@ -123,9 +125,12 @@ button {
 .article_a {
     font-size: 14px;
     line-height: 24px;
-    text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
+}
+
+.article_a:hover {
+    text-decoration: underline;
 }
 
 .hr5 {
