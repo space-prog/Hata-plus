@@ -6,7 +6,7 @@ a {
     cursor: url('../cursors/tet.cur'), auto;
 }
 
-td + td {
+td+td {
     text-align: center;
     border-left: 1px solid #cdcddd;
 }
@@ -19,7 +19,7 @@ tr {
     transition: all .3s ease;
 }
 
-tr + tr {
+tr+tr {
     border-top: 1px solid #cecedd;
 }
 
@@ -201,12 +201,12 @@ button {
     line-height: 0;
 }
 
-.submenu li:hover > .test:after {
+.submenu li:hover>.test:after {
     transform: translateY(-50%) rotate(135deg) scale(0.8);
     border-color: #fff;
 }
 
-.submenu li:hover> a {
+.submenu li:hover>a {
     color: #fff;
 }
 
@@ -270,11 +270,11 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 9998;
 }
 
-.btn button{
+.btn button {
     position: relative;
     z-index: 9;
 }
@@ -282,19 +282,64 @@ button {
 .popup {
     display: none;
     position: fixed;
-    top: 45%;
+    top: 40%;
     left: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    padding: 20px;
+    max-width: 360px;
+    max-height: 238px;
+    padding: 27px 0px 27px 27px;
     background-color: lightblue;
     transform: translateX(-50%);
     z-index: 9999;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
-  
+
 .close-popup {
     position: absolute;
     top: 10px;
     right: 10px;
     text-decoration: none;
+}
+
+.up_text {
+    padding-bottom: 18px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.popup input {
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+    min-width: 300px;
+    padding-left: 16px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+.send {
+    padding: 16px 110px;
+    border-radius: 22px;
+    background-color: #fd8300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.input_name {
+    margin-bottom: 5px;
+}
+
+.input_phone {
+    margin-bottom: 18px;
 }
