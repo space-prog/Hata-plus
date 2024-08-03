@@ -137,6 +137,8 @@ button {
 }
 
 .submenu {
+    left: 50%;
+    transform: translateX(-50%);
     top: 60px;
     width: 136px;
     max-height: 130px;
@@ -144,6 +146,15 @@ button {
     background-color: #e4e4ec;
     display: none;
     position: absolute;
+}
+
+.submenu::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    border: 5px solid transparent;
 }
 
 .menu:hover>.submenu {
@@ -154,25 +165,29 @@ button {
     padding: 16px 0;
 }
 
+.menu1 {
+    position: relative;
+}
+
 .test_menu {
     background: none;
     width: 105px;
     height: 13px;
 }
 
-.submenu ul>li {
+.submenu li {
     padding: 5px 0;
     border-bottom: 1px solid #cecedd;
 }
 
-.submenu ul>li>a {
+.submenu li>a {
     font-size: 12px;
     letter-spacing: 2px;
     color: #25252c;
     font-family: "Arial";
 }
 
-.submenu ul>li:last-child {
+.submenu li:last-child {
     border: none;
 }
 
@@ -181,31 +196,43 @@ button {
     line-height: 0;
 }
 
-.submenu ul li:hover > .test:after {
+.submenu li:hover > .test:after {
     transform: translateY(-50%) rotate(135deg) scale(0.8);
     border-color: #fff;
 }
 
-.submenu ul li:hover> a {
+.submenu li:hover> a {
     color: #fff;
 }
 
-.submenu ul li:hover {
+.submenu li:hover {
     border-radius: 3px;
     background-color: #fd8300;
 }
 
 .submenu2 {
-    overflow: hidden;
-    border-radius: 3px;
-    top: 95px;
-    left: 145px;
-    color: #000;
-    background-color: #e4e4ec;
     position: absolute;
     display: none;
+    border-radius: 3px;
+    top: 0;
+    left: calc(100% + 5px);
+    color: #000;
+    background-color: #e4e4ec;
     width: 136px;
-    height: 117px;
+    height: 115px;
+}
+
+.submenu2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-left: 8px solid transparent;
+    height: 100%;
+}
+
+.submenu2_activator {
+    position: relative;
 }
 
 .submenu2_activator:hover .submenu2 {
@@ -224,10 +251,6 @@ button {
 .menu-items {
     padding: 0 10px;
     color: #000;
-}
-
-.menu1 > a {
-    padding: 0 10px;
 }
 
 .table {
