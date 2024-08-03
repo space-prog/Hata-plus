@@ -231,7 +231,7 @@ button {
     content: "";
     position: absolute;
     top: 0;
-    left: -10px;
+    left: -8px;
     border-left: 8px solid transparent;
     height: 100%;
 }
