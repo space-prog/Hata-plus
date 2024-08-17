@@ -36,11 +36,15 @@ form button {
     border: none;
     background-color: #fd8300;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #ffffff;
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+}
+
+.flex {
+    display: flex;
 }
 
 .infocontacts {
@@ -52,7 +56,7 @@ form button {
 .contactsname {
     padding-bottom: 19px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -61,7 +65,7 @@ form button {
 .contactssubname {
     padding-bottom: 14px;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5em;
     color: #666666;
     font-family: "Arial";
 }
@@ -73,7 +77,7 @@ form button {
 .contacts_number {
     padding-bottom: 14px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -85,7 +89,7 @@ form button {
 
 .contactsemail {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
     font-family: "Arial";
@@ -117,7 +121,7 @@ form button {
 
 form p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     text-align: left;
     color: #24242b;
     font-weight: 700;
@@ -163,7 +167,7 @@ form p {
 
 .checkbox_span input {
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     appearance: none;
@@ -185,5 +189,33 @@ form p {
 }
 
 .input-text-1-block {
-    max-width: 228px;
+    width: 228px;
+}
+
+.input_block {
+    column-gap: 9px;
+}
+
+.input-text-1-block input {
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+    width: 100%;
+}
+
+.form input:not([type="checkbox"]),
+textarea {
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.form textarea {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.form p {
+    padding-bottom: 11px;
 }
