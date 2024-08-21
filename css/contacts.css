@@ -16,6 +16,7 @@ hr {
 }
 
 textarea {
+    resize: vertical;
     box-sizing: border-box;
     width: 466px;
     height: 105px;
@@ -23,10 +24,27 @@ textarea {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
+    outline: none;
+    transition: all .3s ease;
+}
+
+textarea:focus {
+    border-color: #fd8300;
+    box-shadow: 0 0 2.5px rgb(253, 131, 0);
 }
 
 form {
     max-width: 480px;
+}
+
+input:not([type="checkbox"]) {
+    transition: all .3s ease;
+    outline: none;
+}
+
+input:not([type="checkbox"]):focus {
+    border-color:#fd8300;
+    box-shadow: 0 0 2.5px rgb(253, 131, 0);
 }
 
 form button {
@@ -167,19 +185,20 @@ form p {
 
 .checkbox_span input {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-135deg);
     appearance: none;
-    width: 9px;
-    height: 7px;
-    background: url(../img/galochka.png);
+    width: 7px;
+    height: 10px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
     z-index: 2;
-    opacity: 0;
+    transition: all .3s ease;
 }
 
 #checkbox:checked {
-    opacity: 1;
+    border-color: #25252c;
 }
 
 .custom_checkbox {
@@ -218,4 +237,18 @@ textarea {
 
 .form p {
     padding-bottom: 11px;
+}
+
+.popup {
+    padding: 27px;
+}
+
+.button_p {
+    padding-top: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.input_p {
+    width: 310px;
 }
