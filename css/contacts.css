@@ -18,8 +18,10 @@ hr {
 textarea {
     resize: vertical;
     box-sizing: border-box;
-    width: 466px;
-    height: 105px;
+    max-width: 466px;
+    width: 100%;
+    max-height: 205px;
+    min-height: 105px;
     margin-bottom: 12px;
     border-radius: 3px;
     background-color: #ffffff;
@@ -59,6 +61,13 @@ form button {
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fd8300;
 }
 
 .flex {
