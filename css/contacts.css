@@ -77,7 +77,8 @@ form button:hover {
 .infocontacts {
     padding-bottom: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 162px;
 }
 
 .contactsname {
@@ -126,7 +127,7 @@ form button:hover {
     position: relative;
     overflow: hidden;
     width: 467px;
-    height: 355px;
+    height: 370px;
 }
 
 .map iframe {
@@ -260,4 +261,9 @@ textarea {
 
 .input_p {
     width: 310px;
+}
+
+.contactsContainer {
+    display: flex;
+    column-gap: 88px;
 }

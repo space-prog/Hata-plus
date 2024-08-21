@@ -211,7 +211,6 @@ button {
 }
 
 .submenu li:hover {
-    border-radius: 3px;
     background-color: #fd8300;
 }
 
