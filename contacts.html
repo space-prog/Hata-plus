@@ -14,9 +14,11 @@
             <img src="img/x.png" alt="">
         </a>
         <p class="up_text">Замовити дзвінок</p>
-        <p class="input_p"><input type="text" placeholder="Ваше ім’я" class="input_name"></p>
-        <p class="input_p"><input type="text" placeholder="Телефон" class="input_phone"></p>
-        <p class="button_p"><a href="#" class="send">Відправити</a></p>
+        <form action="send.php" method="post">
+            <p><input type="text" name="name" placeholder="Ваше ім’я" class="input_name"></p>
+            <p><input type="text" name="phone" placeholder="Телефон" class="input_phone"></p>
+            <p><button type="submit" class="send">Відправити</button></p>
+        </form>
     </div>
     <header>
         <div class="header">
