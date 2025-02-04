@@ -83,14 +83,36 @@ button {
 
 .header {
     background-color: #1f1f56;
-    max-height: 55px;
+    /* max-height: 55px; */
     padding: 16px 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 999;
 }
 
-.header>nav>ul>li>a {
+.header nav {
+    display: block;
+}
+
+.header .nav {
+    display: block;
+}
+
+.header .nav_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.nav_wrapper ul li {
+    padding-bottom: 10px;
+}
+
+.header .wrapper {
+    flex-wrap: wrap;
+}
+
+.header>.header_wrap>nav>.nav_wrapper>ul>li>a {
     color: #b1b1d2;
     font-size: 14px;
     letter-spacing: 2px;
@@ -498,6 +520,7 @@ a.in {
 
 .nav-social {
     column-gap: 25px;
+    justify-content: center;
 }
 
 a.tw:hover {
