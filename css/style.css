@@ -142,6 +142,9 @@ svg:hover {
     background-color: #fff;
     padding-top: 84px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
 }
 
 .contacts>p {
@@ -224,6 +227,7 @@ button {
     max-width: 610px;
     margin: 0 auto;
     padding: 40px 0;
+    text-align: center;
 }
 
 .main {
@@ -231,10 +235,12 @@ button {
     margin-bottom: 50px;
     display: flex;
     column-gap: 28px;
+    flex-wrap: wrap-reverse;
 }
 
 .main-text {
     max-width: 669px;
+    text-align: center;
 }
 
 h1 {
@@ -305,6 +311,7 @@ h1 {
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .homes img {
@@ -317,7 +324,10 @@ h1 {
 
 .homes {
     display: flex;
+    justify-content: center;
     column-gap: 28px;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .homes span {
@@ -367,6 +377,18 @@ h1 {
 .info {
     background-color: #ededf5;
     padding: 28px 0;
+}
+
+.info .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.aside {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 25px;
 }
 
 .navigation {
