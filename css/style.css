@@ -72,6 +72,7 @@ button {
 }
 
 .wrapper {
+    padding: 0 15px;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -134,7 +135,7 @@ svg:hover {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 15px;
-    column-gap: 25px;
+    column-gap: 40px;
 }
 
 .contacts>p {
@@ -707,10 +708,6 @@ button.send {
         width: auto;
     }
 
-    .contacts {
-        justify-content: space-between;
-    }
-
     .info .wrapper {
         justify-content: space-between;
     }
@@ -719,6 +716,10 @@ button.send {
 @media screen and (min-width: 1000px) {
     .homes {
         flex-wrap: nowrap;
+    }
+
+    .contacts {
+        justify-content: space-between;
     }
 }
 
@@ -841,7 +842,7 @@ a {
     padding: 15px 10px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .burger {
         display: none;
     }
