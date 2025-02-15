@@ -33,6 +33,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 1px;
+}
+
 body {
     font-family: "Arial";
     cursor: url('../cursors/cursor.cur'), auto;
@@ -49,7 +53,7 @@ button[type="submit"] {
 }
 
 form p {
-    max-width: 300px;
+    max-width: 300rem;
 }
 
 input {
@@ -68,14 +72,14 @@ button {
 
 .hr1 {
     width: 100%;
-    border-top: 1px #000;
-    margin-bottom: 31px;
+    border-top: 1rem #000;
+    margin-bottom: 31rem;
 }
 
 .wrapper {
-    padding: 0 15px;
+    padding: 0 15rem;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 960rem;
 }
 
 .flex-between {
@@ -86,7 +90,7 @@ button {
 .header {
     background-color: #1f1f56;
     /* max-height: 55px; */
-    padding: 16px 0;
+    padding: 16rem 0;
     /* position: fixed; */
     width: 100%;
     z-index: 999;
@@ -100,8 +104,8 @@ button {
 
 .header>.header_wrap>nav>.nav_wrapper>ul>li>a {
     color: #b1b1d2;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
     transition: all .3s ease;
 }
 
@@ -115,7 +119,7 @@ button {
 
 /* .nav {
     display: flex;
-    column-gap: 26px;
+    column-gap: 26rem;
 } */
 
 svg {
@@ -128,29 +132,29 @@ svg:hover {
 }
 
 .contacts {
-    padding: 27px 0;
+    padding: 27rem 0;
     background-color: #fff;
-    /* padding-top: 84px; */
+    /* padding-top: 84rem; */
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 15px;
-    column-gap: 40px;
+    row-gap: 15rem;
+    column-gap: 40rem;
 }
 
 .contacts>p {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
 }
 
 .contacts button {
-    width: 200px;
-    height: 51px;
-    border-radius: 25px;
+    width: 200rem;
+    height: 51rem;
+    border-radius: 25rem;
     background-color: #ffffff;
-    border: 2px solid #fd8300;
+    border: 2rem solid #fd8300;
     transition: all .3s ease;
 }
 
@@ -168,7 +172,7 @@ svg:hover {
 
 .mail,
 .skype {
-    column-gap: 11px;
+    column-gap: 11rem;
     display: flex;
 }
 
@@ -183,7 +187,7 @@ svg:hover {
 }
 
 .phone a {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
@@ -191,7 +195,7 @@ svg:hover {
 
 .mail a,
 .skype a {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     color: #25252c;
 }
@@ -203,7 +207,7 @@ svg:hover {
 }
 
 button {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     color: #25252c;
     font-weight: bold;
@@ -215,33 +219,34 @@ button {
 }
 
 .adv div {
-    max-width: 610px;
+    max-width: 610rem;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40rem 0;
     text-align: center;
 }
 
 .main {
-    padding-top: 43px;
-    margin-bottom: 50px;
+    padding-top: 43rem;
+    margin-bottom: 50rem;
     display: flex;
-    column-gap: 28px;
+    column-gap: 28rem;
     flex-wrap: wrap-reverse;
 }
 
 .main-text {
-    max-width: 669px;
+    max-width: 669rem;
     text-align: center;
 }
 
 h1 {
-    padding-bottom: 18px;
+    font-size: 24rem;
+    padding-bottom: 18rem;
     font-family: 'Roboto Slab';
 }
 
 .t1 {
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 30rem;
+    letter-spacing: 2rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
@@ -251,15 +256,15 @@ h1 {
 }
 
 .t2 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #fff;
     text-align: center;
-    padding: 12px 0;
+    padding: 12rem 0;
 }
 
 .t3 {
-    font-size: 40px;
+    font-size: 40rem;
     color: #fd8300;
     font-weight: bold;
     display: flex;
@@ -268,40 +273,40 @@ h1 {
 }
 
 .t4 {
-    font-size: 24px;
+    font-size: 24rem;
     color: #fd8300;
     font-weight: bold;
 }
 
 .text1 {
-    padding-bottom: 14px;
+    padding-bottom: 14rem;
 }
 
 .text2,
 .text1 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #666;
 }
 
 .link {
-    padding-top: 28px;
-    margin-bottom: 34px;
+    padding-top: 28rem;
+    margin-bottom: 34rem;
 }
 
 .link a {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #fd8300;
     font-weight: bold;
 }
 
 .p1 {
-    font-size: 24px;
+    font-size: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    margin-bottom: 25px;
+    margin-bottom: 25rem;
     text-align: center;
 }
 
@@ -316,37 +321,37 @@ h1 {
 .homes {
     display: flex;
     justify-content: center;
-    column-gap: 28px;
+    column-gap: 28rem;
     flex-wrap: wrap;
-    row-gap: 35px;
+    row-gap: 35rem;
 }
 
 .homes span {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.4em;
     color: #9999a6;
 }
 
 .name1 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
 }
 
 .home2 img {
-    height: 153px;
+    height: 153rem;
 }
 
 .name2 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
 }
 
 .name3 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
@@ -367,13 +372,13 @@ h1 {
 
 .info {
     background-color: #ededf5;
-    padding: 28px 0;
+    padding: 28rem 0;
 }
 
 .info .wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 10rem;
 }
 
 .aside aside {
@@ -383,20 +388,20 @@ h1 {
 .aside {
     width: 100%;
     justify-content: center;
-    padding-bottom: 25px;
+    padding-bottom: 25rem;
 }
 
 .navigation {
-    min-width: 220px;
+    min-width: 220rem;
     position: sticky;
-    top: 70px;
+    top: 70rem;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 3rem;
 }
 
 .navigation p {
-    padding: 11px 16px;
-    font-size: 16px;
+    padding: 11rem 16rem;
+    font-size: 16rem;
     line-height: 1.5em;
     color: #ffffff;
     font-weight: 700;
@@ -406,7 +411,7 @@ h1 {
 
 .navigation>ul>li>a,
 .sub-menu li>a {
-    padding: 11px 16px;
+    padding: 11rem 16rem;
 }
 
 .sub-menu {
@@ -416,7 +421,7 @@ h1 {
 }
 
 .navigation>ul>li:hover>.sub-menu {
-    max-height: 1000px;
+    max-height: 1000rem;
     visibility: visible;
     transition: max-height .5s ease;
 }
@@ -428,7 +433,7 @@ h1 {
 
 .navigation a {
     display: block;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #25252c;
     /* transition: all .5s ease; */
@@ -439,11 +444,11 @@ h1 {
 }
 
 .navigation>ul>li+li {
-    border-top: 1px solid #cecedd;
+    border-top: 1rem solid #cecedd;
 }
 
 .sub-menu li>a {
-    padding-left: 30px;
+    padding-left: 30rem;
     color: #666;
 }
 
@@ -453,7 +458,7 @@ h1 {
 
 .a1 a,
 .a2 a {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.8em;
     color: #666;
     transition: all .4s ease;
@@ -466,24 +471,24 @@ h1 {
 }
 
 .footer {
-    padding: 13px 0;
+    padding: 13rem 0;
     background-color: #dcdce6;
     text-align: center;
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.3em;
     color: #9999a6;
 }
 
 .phone-text-1 {
-    padding-left: 11px;
+    padding-left: 11rem;
 }
 
 .phone_mail {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 15px;
-    column-gap: 20px;
+    padding-top: 15rem;
+    column-gap: 70rem;
     display: flex;
 }
 
@@ -491,29 +496,29 @@ h1 {
     width: 100%;
     justify-content: center;
     display: flex;
-    column-gap: 100px;
+    column-gap: 100rem;
 }
 
 .logo img {
-    width: 17px;
-    height: 17px;
+    width: 17rem;
+    height: 17rem;
 }
 
 .test {
     position: relative;
     display: block;
-    padding: 10px 20px;
+    padding: 10rem 20rem;
 }
 
 .test:after {
     content: "";
     position: absolute;
     top: 50%;
-    right: 12px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
+    right: 12rem;
+    width: 10rem;
+    height: 10rem;
+    border-top: 2rem solid #666;
+    border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg) scale(0.8);
     transition: all .4s ease;
 }
@@ -547,7 +552,7 @@ a.in {
 }
 
 .nav-social {
-    column-gap: 25px;
+    column-gap: 25rem;
     justify-content: center;
 }
 
@@ -566,7 +571,7 @@ a.fb:hover {
 .icon {
     display: block;
     position: relative;
-    padding-left: 11px;
+    padding-left: 11rem;
 }
 
 .icon:before {
@@ -576,7 +581,7 @@ a.fb:hover {
     background: url(../img/Sprite.png) no-repeat;
     top: 50%;
     transform: translateY(-50%);
-    left: -21px;
+    left: -21rem;
     transition: all .4s ease;
 }
 
@@ -632,50 +637,50 @@ a.fb:hover {
     position: fixed;
     top: 40%;
     left: 50%;
-    max-width: 360px;
-    max-height: 238px;
-    padding: 27px 42px;
+    max-width: 360rem;
+    max-height: 238rem;
+    padding: 27rem 42rem;
     transform: translateX(-50%);
     z-index: 9999;
-    border-radius: 5px;
+    border-radius: 5rem;
     background-color: #fff;
 }
 
 .close-popup {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 10rem;
+    right: 10rem;
     text-decoration: none;
 }
 
 .up_text {
-    padding-bottom: 18px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-bottom: 18rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 .popup input {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #9999a6;
     font-style: italic;
-    padding-left: 11px;
+    padding-left: 11rem;
     font-family: "Arial";
-    min-width: 300px;
-    height: 40px;
-    border-radius: 3px;
+    min-width: 300rem;
+    height: 40rem;
+    border-radius: 3rem;
     background-color: #ffffff;
-    border: 1px solid #c5c5d4;
+    border: 1rem solid #c5c5d4;
 }
 
 .send {
-    border-radius: 22px;
+    border-radius: 22rem;
     background-color: #fd8300;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #fff;
     font-weight: bold;
     font-family: "Arial";
@@ -683,11 +688,11 @@ a.fb:hover {
 }
 
 .input_name {
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
 }
 
 .input_phone {
-    margin-bottom: 23px;
+    margin-bottom: 23rem;
 }
 
 .thanks {
@@ -696,10 +701,10 @@ a.fb:hover {
 
 button.send {
     width: 100%;
-    border-radius: 22px;
+    border-radius: 22rem;
     background-color: #fd8300;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #fff;
     font-weight: bold;
     font-family: "Arial";
@@ -766,7 +771,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4rem);
     z-index: 10;
 }
 
@@ -775,51 +780,51 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 10rem;
 }
 
 .burger {
-    width: 50px;
+    width: 50rem;
     height: 100%;
     cursor: pointer;
 }
 
 .bord {
     display: block;
-    margin: 4px;
-    width: 30px;
-    height: 5px;
-    border-radius: 2px;
+    margin: 4rem;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 2rem;
     background-color: #fff;
     transition: all 1s ease;
 }
 
 .burger:hover>.b1 {
-    transform: translateX(20px);
+    transform: translateX(20rem);
 }
 
 .burger:hover>.b2 {
-    transform: translateX(10px);
+    transform: translateX(10rem);
 }
 
 .b1 {
-    width: 20px;
+    width: 20rem;
 }
 
 .b2 {
-    width: 30px;
+    width: 30rem;
 }
 
 .b3 {
-    width: 40px;
-    top: 10px;
+    width: 40rem;
+    top: 10rem;
 }
 
 .menu-burger {
-    /* column-gap: 20px; */
+    /* column-gap: 20rem; */
     height: 100%;
-    width: 150px;
-    padding: 10px 15px;
+    width: 150rem;
+    padding: 10rem 15rem;
     position: fixed;
     display: block;
     top: 0;
@@ -829,33 +834,29 @@ a {
     transition: all .5s ease;
 }
 
-.menu-burger li {
-    padding-bottom: 20px;
-}
-
 .menu-burger li:first-child {
-    padding-top: 12px;
+    padding-top: 12rem;
 }
 
 .cancel {
     position: absolute;
-    top: 6px;
-    right: 5px;
+    top: 6rem;
+    right: 5rem;
     cursor: pointer;
 }
 
 .cancel svg {
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
 }
 
 /* .top-line {
-    padding: 15px 10px;
+    padding: 15rem 10rem;
     background-color: pink;
   } */
 
 .menu li {
-    padding: 15px 10px;
+    padding: 15rem 10rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -864,7 +865,7 @@ a {
     }
 
     .top-line {
-        padding: 0 10px;
+        padding: 0 10rem;
     }
 
     .menu-burger {
@@ -874,12 +875,12 @@ a {
         position: static;
         display: flex;
         justify-content: space-between;
-        column-gap: 20px;
+        column-gap: 20rem;
         background-color: #1f1f56;
     }
 
     .menu li {
-        padding: 15px 10px;
+        padding: 15rem 10rem;
     }
 
     .cancel {
@@ -887,6 +888,32 @@ a {
     }
 
     .menu-burger li:first-child {
-        padding-top: 0px;
+        padding-top: 0;
+    }
+
+    .footer-wrapper {
+        width: auto;
+    }
+
+    .phone_mail {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 0.9px;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 1.2px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 1.3px;
     }
 }
