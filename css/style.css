@@ -816,6 +816,7 @@ a {
 }
 
 .menu-burger {
+    /* column-gap: 20px; */
     height: 100%;
     width: 150px;
     padding: 10px 15px;
@@ -826,6 +827,10 @@ a {
     z-index: 11;
     background-color: #1f1f56;
     transition: all .5s ease;
+}
+
+.menu-burger li {
+    padding-bottom: 20px;
 }
 
 .menu-burger li:first-child {
