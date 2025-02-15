@@ -22,20 +22,50 @@
     </div>
     <header>
         <div class="header">
-            <nav class="wrapper flex-between">
-                <ul class="flex-between nav">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="#">Про компанію</a></li>
-                    <li><a href="second.html">Наші будівлі</a></li>
-                    <li><a href="#">Акції</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-                <ul class="flex-between nav-social">
-                    <li><a href="#" class="fb"></a></li>
-                    <li><a href="#" class="tw"></a></li>
-                    <li><a href="#" class="in"></a></li>
-                </ul>
-            </nav>
+            <div class="header_wrap">
+                <nav class="wrapper flex-between top-line">
+                    <div class="burger">
+                        <span class="bord b1"></span>
+                        <span class="bord b2"></span>
+                        <span class="bord b3"></span>
+                    </div>
+                    <div class="nav_wrapper">
+                        <ul class="flex-between nav menu-burger">
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Про компанію</a></li>
+                            <li class="menu menu1">
+                                <a href="second.html">Наші будівлі</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="test">Таунхауси</a></li>
+                                    <li><a href="#" class="test">Пентхауси</a></li>
+                                    <li><a href="#" class="test">Котеджі</a></li>
+                                    <li class="submenu2_activator">
+                                        <a href="#" class="test">Собачі будки</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#" class="menu-items">Елітні будки</a></li>
+                                            <li><a href="#" class="menu-items">Для чіхуахуа</a></li>
+                                            <li><a href="#" class="menu-items">Вольєри</a></li>
+                                            <li><a href="#" class="menu-items">Халабуди</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Акції</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
+                            <li class="cancel"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path
+                                        d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+                                    </path>
+                                </svg></li>
+                        </ul>
+                    </div>
+                    <ul class="flex-between nav-social">
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                        <li><a href="#" class="in"></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="contacts flex-between wrapper">
             <div>
@@ -53,7 +83,7 @@
             <div class="hataplus">
                 <p class="mail">
                     <a href="mailto:hataplus@hata.com.ua" class="icon">hataplus@hata.com.ua</a></p>
-                <p class="skype">   
+                <p class="skype">
                     <a href="skype:hataplus?chat" class="icon">hataplus</a>
                 </p>
             </div>
