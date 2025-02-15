@@ -225,7 +225,7 @@ button {
 .adv div {
     max-width: 610rem;
     margin: 0 auto;
-    padding: 40rem 0;
+    padding: 40rem 15rem;
     text-align: center;
 }
 
@@ -378,7 +378,7 @@ h1 {
 .info .wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 10rem;
+    row-gap: 20rem;
 }
 
 .aside aside {
@@ -489,7 +489,7 @@ h1 {
     flex-wrap: wrap;
     /* padding-top: 15rem; */
     column-gap: 70rem;
-    row-gap: 30px;
+    row-gap: 15px;
     display: flex;
 }
 
@@ -497,7 +497,7 @@ h1 {
     width: 100%;
     justify-content: center;
     display: flex;
-    column-gap: 100rem;
+    column-gap: 50rem;
 }
 
 .logo img {
@@ -939,5 +939,19 @@ a {
 @media screen and (min-width: 887px) {
     .phone, .hataplus {
         padding-left: 0;
+    }
+}
+
+.homes img {
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    .info .wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .footer-wrapper {
+        width: auto;
     }
 }
