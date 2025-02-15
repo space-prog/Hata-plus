@@ -77,7 +77,7 @@ button {
 }
 
 .wrapper {
-    padding: 0 15rem;
+    padding: 0 15px;
     margin: 0 auto;
     max-width: 960rem;
 }
@@ -104,7 +104,7 @@ button {
 
 .header>.header_wrap>nav>.nav_wrapper>ul>li>a {
     color: #b1b1d2;
-    font-size: 14rem;
+    font-size: 20px;
     letter-spacing: 2rem;
     transition: all .3s ease;
 }
@@ -132,7 +132,7 @@ svg:hover {
 }
 
 .contacts {
-    padding: 27rem 0;
+    padding: 27rem 15px;
     background-color: #fff;
     /* padding-top: 84rem; */
     align-items: center;
@@ -184,6 +184,10 @@ svg:hover {
 .skype img {
     width: 18px;
     height: 19px;
+}
+
+.phone, .hataplus {
+    padding-left: 10px;
 }
 
 .phone a {
@@ -339,10 +343,6 @@ h1 {
     font-weight: bold;
 }
 
-.home2 img {
-    height: 153rem;
-}
-
 .name2 {
     font-size: 14rem;
     line-height: 1.7em;
@@ -372,7 +372,7 @@ h1 {
 
 .info {
     background-color: #ededf5;
-    padding: 28rem 0;
+    padding: 28rem 15px;
 }
 
 .info .wrapper {
@@ -487,8 +487,9 @@ h1 {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 15rem;
+    /* padding-top: 15rem; */
     column-gap: 70rem;
+    row-gap: 30px;
     display: flex;
 }
 
@@ -739,7 +740,7 @@ button.send {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 700px) {
     .palka {
         display: none;
     }
@@ -823,7 +824,7 @@ a {
 .menu-burger {
     /* column-gap: 20rem; */
     height: 100%;
-    width: 150rem;
+    width: 80%;
     padding: 10rem 15rem;
     position: fixed;
     display: block;
@@ -834,14 +835,22 @@ a {
     transition: all .5s ease;
 }
 
+.menu-burger li {
+    padding-bottom: 20px;
+}
+
+.menu-burger li > a{
+    font-size: 40px;
+}
+
 .menu-burger li:first-child {
     padding-top: 12rem;
 }
 
 .cancel {
     position: absolute;
-    top: 6rem;
-    right: 5rem;
+    top: 10rem;
+    right: 10rem;
     cursor: pointer;
 }
 
@@ -879,6 +888,10 @@ a {
         background-color: #1f1f56;
     }
 
+    .menu-burger li {
+        padding-bottom: 0;
+    }
+
     .menu li {
         padding: 15rem 10rem;
     }
@@ -898,6 +911,10 @@ a {
     .phone_mail {
         width: auto;
     }
+
+    .header>.header_wrap>nav>.nav_wrapper>ul>li>a {
+        font-size: 15rem;
+    }
 }
 
 @media screen and (min-width: 320px) {
@@ -914,6 +931,13 @@ a {
 
 @media screen and (min-width: 1920px) {
     html {
-        font-size: 1.3px;
+        font-size: 2px;
+    }
+}
+
+
+@media screen and (min-width: 887px) {
+    .phone, .hataplus {
+        padding-left: 0;
     }
 }
