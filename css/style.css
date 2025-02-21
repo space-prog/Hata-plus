@@ -860,12 +860,13 @@ a {
 }
 
 .table {
-    overflow: hidden;
+    overflow-x: scroll;
+    max-width: 90vw;    
 }
 
 table {
     min-width: 960px;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 /* .top-line {
