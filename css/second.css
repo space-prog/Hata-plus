@@ -32,14 +32,14 @@ tbody tr:hover {
 }
 
 tbody tr:hover>td {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #fff;
 }
 
 th {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -51,8 +51,8 @@ table {
 }
 
 thead {
-    width: 960px;
-    height: 70px;
+    width: 960rem;
+    height: 70rem;
     background-color: #1f1f56;
 }
 
@@ -62,14 +62,14 @@ tbody {
 
 td {
     transition: all .4s ease;
-    height: 41px;
-    font-size: 14px;
-    line-height: 24px;
+    height: 41rem;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #666;
 }
 
 article {
-    padding-bottom: 33px;
+    padding-bottom: 33rem;
 }
 
 tr:has(td) {
@@ -85,7 +85,7 @@ button {
 }
 
 .nav-social {
-    padding: 16px 0;
+    padding: 16rem 0;
 }
 
 .contacts2 {
@@ -94,41 +94,39 @@ button {
 }
 
 .h1 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 1em;
     color: #24242b;
 }
 
 .p {
-    padding-bottom: 27px;
-    max-width: 842px;
-    max-height: 56px;
-    font-size: 14px;
-    line-height: 24px;
+    padding-bottom: 27rem;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #666;
 }
 
 .td1 {
-    padding-left: 20px;
+    padding-left: 20rem;
     text-align: left;
 }
 
 .td2 {
-    padding-right: 20px;
+    padding-right: 20rem;
     text-align: right;
 }
 
 .information {
-    padding: 25px 0;
-    font-size: 13px;
-    line-height: 21px;
+    padding: 25rem 0;
+    font-size: 13rem;
+    line-height: 1.6em;
     color: #666666;
     font-family: "Arial";
 }
 
 .article_a {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 1.7em;
     color: #fd8300;
     font-weight: bold;
 }
@@ -138,8 +136,7 @@ button {
 }
 
 .hr5 {
-    margin-bottom: 31px;
-    width: 960px;
+    margin-bottom: 31rem;
     height: 1px;
     background-color: #e4e4ec;
     border: none;
@@ -150,7 +147,7 @@ button {
     transform: translateX(-50%);
     top: 60px;
     min-width: 136px;
-    max-height: 130pxb;
+    max-height: 130px;
     border-radius: 3px;
     background-color: #e4e4ec;
     display: none;
@@ -171,7 +168,7 @@ button {
 }
 
 .menu {
-    padding: 16px 0;
+    padding: 16rem 0;
 }
 
 .menu1 {
@@ -190,7 +187,7 @@ button {
 }
 
 .submenu li>a {
-    font-size: 12px;
+    font-size: 12rem;
     letter-spacing: 2px;
     color: #25252c;
     font-family: "Arial";
@@ -201,7 +198,7 @@ button {
 }
 
 .test {
-    padding: 10px 5px;
+    padding: 10rem 5rem;
     line-height: 0;
 }
 
@@ -226,8 +223,8 @@ button {
     left: calc(100% + 5px);
     color: #000;
     background-color: #e4e4ec;
-    min-width: 136px;
-    min-height: 115px;
+    min-width: 136rem;
+    min-height: 115rem;
 }
 
 .submenu2:before {
@@ -250,14 +247,14 @@ button {
 .test_menu2 {
     right: -10px;
     position: absolute;
-    width: 10px;
-    top: 95px;
-    height: 120px;
+    width: 10rem;
+    top: 95rem;
+    height: 120rem;
     background: none;
 }
 
 .menu-items {
-    padding: 0 10px;
+    padding: 0 10rem;
     color: #000;
 }
 
@@ -305,7 +302,7 @@ button {
 .up_text {
     padding-bottom: 18px;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";

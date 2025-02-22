@@ -138,7 +138,7 @@ svg:hover {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 15rem;
-    column-gap: 40rem;
+    column-gap: 30rem;
 }
 
 .contacts>p {
@@ -149,9 +149,9 @@ svg:hover {
 }
 
 .contacts button {
-    width: 200rem;
-    height: 51rem;
+    max-width: 200rem;
     border-radius: 25rem;
+    padding: 10px 25px;
     background-color: #ffffff;
     border: 2rem solid #fd8300;
     transition: all .3s ease;
@@ -237,7 +237,7 @@ button {
 }
 
 .main-text {
-    max-width: 669rem;
+    /* max-width: 669rem; */
     text-align: center;
 }
 
@@ -860,9 +860,10 @@ a {
 }
 
 .table {
-    overflow-x: scroll;
-    max-width: 90vw;    
+    overflow-x: auto;
+    max-width: 95vw;    
 }
+
 
 table {
     min-width: 960px;
@@ -1027,6 +1028,14 @@ table {
     .header>.header_wrap>nav>.nav_wrapper>ul>li>a {
         font-size: 15rem;
     }
+
+    .contactsContainer {
+        flex-wrap: nowrap;
+    }
+
+    .infocontacts {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 320px) {
@@ -1066,4 +1075,5 @@ table {
     .footer-wrapper {
         width: auto;
     }
+
 }

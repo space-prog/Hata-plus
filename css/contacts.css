@@ -1,12 +1,16 @@
+h1 {
+    text-align: center;
+}
+
 input[type="text"] {
     width: 100%;
     box-sizing: border-box;
-    margin-right: 9px;
-    margin-bottom: 9px;
+    margin-right: 9rem;
+    margin-bottom: 9rem;
 }
 
 main {
-    margin-top: 44px;
+    margin-top: 44rem;
 }
 
 hr {
@@ -18,11 +22,11 @@ hr {
 textarea {
     resize: vertical;
     box-sizing: border-box;
-    max-width: 466px;
+    /* max-width: 466px; */
     width: 100%;
-    max-height: 205px;
-    min-height: 105px;
-    margin-bottom: 12px;
+    max-height: 205rem;
+    min-height: 105rem;
+    margin-bottom: 12rem;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
@@ -36,7 +40,12 @@ textarea:focus {
 }
 
 form {
-    max-width: 480px;
+    width: 100%;
+    /* max-width: 480px; */
+}
+
+form input::placeholder {
+    font-size:  13rem;
 }
 
 input:not([type="checkbox"]) {
@@ -50,12 +59,12 @@ input:not([type="checkbox"]):focus {
 }
 
 form button {
-    width: 140px;
-    height: 41px;
+    width: 140rem;
+    height: 41rem;
     border-radius: 21px;
     border: none;
     background-color: #fd8300;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #ffffff;
     font-weight: bold;
@@ -75,15 +84,17 @@ form button:hover {
 }
 
 .infocontacts {
-    padding-bottom: 35px;
+    flex-wrap: wrap;
+    padding-bottom: 35rem;
     display: flex;
-    justify-content: flex-start;
-    column-gap: 162px;
+    justify-content: center;
+    column-gap: 45rem;
+    row-gap: 30rem;
 }
 
 .contactsname {
-    padding-bottom: 19px;
-    font-size: 14px;
+    padding-bottom: 8rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #24242b;
     font-weight: 700;
@@ -91,20 +102,16 @@ form button:hover {
 }
 
 .contactssubname {
-    padding-bottom: 14px;
-    font-size: 14px;
+    padding-bottom: 8rem;
+    font-size: 14rem;
     line-height: 1.5em;
     color: #666666;
     font-family: "Arial";
 }
 
-.rekvizits {
-    max-width: 254px;
-}
-
 .contacts_number {
-    padding-bottom: 14px;
-    font-size: 18px;
+    padding-bottom: 5rem;
+    font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
@@ -112,11 +119,11 @@ form button:hover {
 }
 
 .contactssubname1 {
-    max-width: 180px;
+    max-width: 180rem;
 }
 
 .contactsemail {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
@@ -126,8 +133,8 @@ form button:hover {
 .map {
     position: relative;
     overflow: hidden;
-    width: 467px;
-    height: 370px;
+    width: 100%;
+    height: 370rem;
 }
 
 .map iframe {
@@ -139,16 +146,18 @@ form button:hover {
 }
 
 .razdelitel {
-    margin-bottom: 36px;
+    margin-bottom: 36rem;
 }
 
 .block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20rem;
 }
 
 form p {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     text-align: left;
     color: #24242b;
@@ -157,9 +166,8 @@ form p {
 }
 
 .tema {
-    width: 466px;
-    height: 40px;
-    padding-bottom: 9px;
+    /* height: 40px; */
+    padding-bottom: 9rem;
 }
 
 .tema input {
@@ -171,14 +179,20 @@ form p {
 }
 
 .input-text-1 {
-    width: 228px;
-    height: 40px;
+    width: 228rem;
+    height: 40rem;
 }
 
 .down {
     display: flex;
     align-items: center;
-    column-gap: 29px;
+    column-gap: 29rem;
+    flex-wrap: wrap;
+    row-gap: 20rem;
+}
+
+.down button {
+    width: 100%;
 }
 
 .checkbox_span {
@@ -190,7 +204,11 @@ form p {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     z-index: 1;
-    margin-bottom: 14px;
+    margin-bottom: 14rem;
+}
+
+.checkboxlabel {
+    font-size: 13rem;
 }
 
 .checkbox_span input {
@@ -212,17 +230,18 @@ form p {
 }
 
 .custom_checkbox {
-    padding-top: 11px;
+    padding-top: 11rem;
     display: flex;
-    column-gap: 10px;
+    column-gap: 10rem;
 }
 
 .input-text-1-block {
-    width: 228px;
+    width: 100%;
 }
 
 .input_block {
-    column-gap: 9px;
+    column-gap: 9rem;
+    flex-wrap: wrap;
 }
 
 .input-text-1-block input {
@@ -234,11 +253,11 @@ form p {
 .form input:not([type="checkbox"]),
 textarea {
     box-sizing: border-box;
-    padding: 16px;
+    padding: 16rem;
 }
 
 .form textarea {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.6em;
     color: #9999a6;
     font-style: italic;
@@ -246,28 +265,85 @@ textarea {
 }
 
 .form p {
-    padding-bottom: 11px;
+    padding-bottom: 11rem;
 }
 
 .popup {
-    padding: 27px;
+    padding: 27rem;
 }
 
 .button_p {
-    padding-top: 20px;
+    padding-top: 20rem;
     justify-content: center;
     width: 100%;
 }
 
 .input_p {
-    width: 310px;
+    width: 310rem;
 }
 
 .contactsContainer {
+    justify-content: center;
+    row-gap: 30rem;
+    flex-wrap: wrap;
     display: flex;
-    column-gap: 88px;
+    column-gap: 45rem;
+}
+
+.ofis, .konsultation, .rekvizits {
+    width: 254rem;
 }
 
 header {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (min-width: 583px) {
+    .contactsContainer > .ofis, .contactsContainer > .konsultation, .infocontacts > .rekvizits {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 868px) {
+    .infocontacts > .rekvizits {
+        width: 254rem;
+    }
+
+    .contactsContainer {
+        justify-content: flex-start;
+        column-gap: 60rem;
+    }
+
+    .infocontacts {
+        justify-content: flex-start;
+        column-gap: 110rem;
+    }
+
+    h1 {
+        text-align: left;   
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .down {
+        flex-wrap: nowrap;
+    }
+
+    form {
+        width: auto;
+    }
+
+    .block {
+        flex-wrap: nowrap;
+        column-gap: 20rem;
+    }
+
+    .map {
+        width: 466rem;
+    }
+
+    .down button {
+        width: auto;
+        padding: 10rem 20rem;
+    }
 }
