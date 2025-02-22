@@ -151,7 +151,7 @@ form button:hover {
 
 .block {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 20rem;
 }
@@ -172,10 +172,11 @@ form p {
 
 .tema input {
     width: 100%;
-    height: 100%;
+    height: 40rem;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
+    margin-bottom: 0;
 }
 
 .input-text-1 {
@@ -298,7 +299,7 @@ header {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-@media screen and (min-width: 583px) {
+@media screen and (min-width: 528px) {
     .contactsContainer > .ofis, .contactsContainer > .konsultation, .infocontacts > .rekvizits {
         width: auto;
     }
@@ -345,5 +346,19 @@ header {
     .down button {
         width: auto;
         padding: 10rem 20rem;
+    }
+
+    .input_block {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1066px){
+    form {
+        width: 40vw;
+    }
+
+    .map {
+        width: 40vw;
     }
 }

@@ -84,8 +84,8 @@ button {
     padding: 0;
 }
 
-.nav-social {
-    padding: 16rem 0;
+header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .contacts2 {
@@ -142,35 +142,6 @@ button {
     border: none;
 }
 
-.submenu {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 60px;
-    min-width: 136px;
-    max-height: 130px;
-    border-radius: 3px;
-    background-color: #e4e4ec;
-    display: none;
-    position: absolute;
-}
-
-.submenu::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 0;
-    width: 100%;
-    border: 5px solid transparent;
-}
-
-.menu:hover>.submenu {
-    display: block;
-}
-
-.menu {
-    padding: 16rem 0;
-}
-
 .menu1 {
     position: relative;
 }
@@ -179,83 +150,6 @@ button {
     background: none;
     width: 105px;
     height: 13px;
-}
-
-.submenu li {
-    padding: 5px 0;
-    border-bottom: 1px solid #cecedd;
-}
-
-.submenu li>a {
-    font-size: 12rem;
-    letter-spacing: 2px;
-    color: #25252c;
-    font-family: "Arial";
-}
-
-.submenu li:last-child {
-    border: none;
-}
-
-.test {
-    padding: 10rem 5rem;
-    line-height: 0;
-}
-
-.submenu li:hover>.test:after {
-    transform: translateY(-50%) rotate(135deg) scale(0.8);
-    border-color: #fff;
-}
-
-.submenu li:hover>a {
-    color: #fff;
-}
-
-.submenu li:hover {
-    background-color: #fd8300;
-}
-
-.submenu2 {
-    position: absolute;
-    display: none;
-    border-radius: 3px;
-    top: 0;
-    left: calc(100% + 5px);
-    color: #000;
-    background-color: #e4e4ec;
-    min-width: 136rem;
-    min-height: 115rem;
-}
-
-.submenu2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -8px;
-    border-left: 8px solid transparent;
-    height: 100%;
-}
-
-.submenu2_activator {
-    position: relative;
-}
-
-.submenu2_activator:hover .submenu2 {
-    display: block;
-}
-
-.test_menu2 {
-    right: -10px;
-    position: absolute;
-    width: 10rem;
-    top: 95rem;
-    height: 120rem;
-    background: none;
-}
-
-.menu-items {
-    padding: 0 10rem;
-    color: #000;
 }
 
 .table {
