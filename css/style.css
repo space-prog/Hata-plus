@@ -149,7 +149,7 @@ svg:hover {
 }
 
 .contacts button {
-    max-width: 200rem;
+    /* max-width: 200rem; */
     border-radius: 25rem;
     padding: 10px 25px;
     background-color: #ffffff;
