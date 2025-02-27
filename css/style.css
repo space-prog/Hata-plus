@@ -732,8 +732,11 @@ button.send {
 @media screen and (min-width: 1000px) {
     .homes {
         flex-wrap: nowrap;
+        justify-content: space-between; 
     }
+}
 
+@media screen and (min-width: 870px) {
     .contacts {
         justify-content: space-between;
     }
@@ -913,6 +916,12 @@ table {
     height: 13px;
 }
 
+.flex_projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .submenu li {
     padding: 10px 0;
     border-bottom: 1px solid #cecedd;
@@ -1049,10 +1058,6 @@ table {
 
     .p1 {
         text-align: left;
-    }
-
-    .homes {
-        justify-content: flex-start;
     }
 
     /* oldmenu */
@@ -1211,3 +1216,4 @@ table {
     }
 
 }
+

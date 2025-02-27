@@ -10,7 +10,7 @@ input[type="text"] {
 }
 
 main {
-    margin-top: 44rem;
+    margin-top: 43rem;
 }
 
 hr {
@@ -205,7 +205,6 @@ form p {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     z-index: 1;
-    margin-bottom: 14rem;
 }
 
 .checkboxlabel {
@@ -233,6 +232,7 @@ form p {
 .custom_checkbox {
     padding-top: 11rem;
     display: flex;
+    align-items: center;
     column-gap: 10rem;
 }
 
@@ -326,10 +326,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-    .down {
-        flex-wrap: nowrap;
-    }
-
     form {
         width: auto;
     }
@@ -362,3 +358,38 @@ header {
         width: 40vw;
     }
 }
+
+/* @media screen and (min-width: 670px) {
+    .down button {
+        width: 50%;
+    }
+} */
+
+/* @media screen and (max-width: 669px) {
+    .down button {
+        width: 45%;
+    }
+} */
+
+.down button {
+    width: 100%;
+}
+
+@media screen and (min-width: 504px) {
+    .down button {
+        width: 35%;
+    }
+}
+
+/* @media screen and (min-width: 670px) {
+    .down {
+        flex-wrap: nowrap;
+    }
+} */
+
+/* @media screen and(max-width: 431px) {
+    .block .down button {
+        width: 100%;
+    }
+} */
+
