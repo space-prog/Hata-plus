@@ -731,6 +731,10 @@ button.send {
     .info .wrapper {
         justify-content: space-between;
     }
+
+    .contacts {
+        padding: 27rem 0;
+    }
 }
 
 @media screen and (min-width: 1000px) {
