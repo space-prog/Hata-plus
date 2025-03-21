@@ -185,7 +185,8 @@ svg:hover {
     height: 19px;
 }
 
-.phone, .hataplus {
+.phone,
+.hataplus {
     padding-left: 10px;
 }
 
@@ -528,27 +529,30 @@ h1 {
     border-color: #fff;
 }
 
-.nav-social a {
+/* .nav-social a {
     display: block;
     background: url(../img/Sprite.png) no-repeat;
-}
+} */
 
 a.fb {
-    background-position: 0 -1px;
-    width: 11px;
-    height: 19px;
+    width: 9rem;
+    height: 18rem;
+    display: inline-block;
+    fill: #fff;
 }
 
 a.tw {
-    background-position: -12px -3px;
-    width: 19px;
-    height: 17px;
+    width: 18rem;
+    height: 15rem;
+    display: inline-block;
+    fill: #fff;
 }
 
 a.in {
-    background-position: -33px 0;
-    width: 20px;
-    height: 20px;
+    width: 18rem;
+    height: 18rem;
+    display: inline-block;
+    fill: #fff;
 }
 
 .nav-social {
@@ -556,7 +560,7 @@ a.in {
     justify-content: center;
 }
 
-a.tw:hover {
+/* a.tw:hover {
     background-position: -12px -25px;
 }
 
@@ -566,7 +570,7 @@ a.in:hover {
 
 a.fb:hover {
     background-position: 0 -22px;
-}
+} */
 
 .icon {
     display: block;
@@ -574,7 +578,7 @@ a.fb:hover {
     padding-left: 11rem;
 }
 
-.icon:before {
+/* .icon:before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -583,7 +587,7 @@ a.fb:hover {
     transform: translateY(-50%);
     left: -21rem;
     transition: all .4s ease;
-}
+} */
 
 .logo a:before {
     background-position: -55px -2px;
@@ -732,7 +736,7 @@ button.send {
 @media screen and (min-width: 1000px) {
     .homes {
         flex-wrap: nowrap;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 }
 
@@ -838,7 +842,7 @@ a {
     transition: all .5s ease;
 }
 
-.menu-burger > li {
+.menu-burger>li {
     padding: 16rem 0;
 }
 
@@ -846,7 +850,7 @@ a {
     padding: 5px 0;
 }
 
-.menu-burger > li > a{
+.menu-burger>li>a {
     font-size: 40px;
 }
 
@@ -864,7 +868,7 @@ a {
 
 .table {
     overflow-x: auto;
-    max-width: 95vw;    
+    max-width: 95vw;
 }
 
 
@@ -878,7 +882,7 @@ table {
     background-color: pink;
   } */
 
-.menu > li {
+.menu>li {
     padding: 15rem 10rem;
 }
 
@@ -1028,7 +1032,7 @@ table {
         background-color: #1f1f56;
     }
 
-    .menu > li {
+    .menu>li {
         padding: 15rem 10rem;
     }
 
@@ -1062,10 +1066,10 @@ table {
 
     /* oldmenu */
 
-    .menu > li {
+    .menu>li {
         padding: 15rem 10rem;
     }
-    
+
     .submenu {
         left: 0;
         top: calc(100% + 5px);
@@ -1076,7 +1080,7 @@ table {
         display: none;
         position: absolute;
     }
-    
+
     .submenu::before {
         content: "";
         position: absolute;
@@ -1085,55 +1089,55 @@ table {
         width: 100%;
         border: 5px solid transparent;
     }
-    
+
     .menu:hover>.submenu {
         display: block;
     }
-    
+
     .menu1 {
         position: relative;
     }
-    
+
     .test_menu {
         background: none;
         width: 105px;
         height: 13px;
     }
-    
+
     .submenu li {
         padding: 5px 0;
         border-bottom: 1px solid #cecedd;
     }
-    
+
     .submenu li>a {
         font-size: 12px;
         letter-spacing: 2px;
         color: #25252c;
         font-family: "Arial";
     }
-    
+
     .submenu li:last-child {
         border: none;
     }
-    
+
     .test {
         padding: 10px 5px;
         line-height: 0;
     }
-    
+
     .submenu li:hover>.test:after {
         transform: translateY(-50%) rotate(135deg) scale(0.8);
         border-color: #fff;
     }
-    
+
     .submenu li:hover>a {
         color: #fff;
     }
-    
+
     .submenu li:hover {
         background-color: #fd8300;
     }
-    
+
     .submenu2 {
         position: absolute;
         display: none;
@@ -1144,7 +1148,7 @@ table {
         background-color: #e4e4ec;
         min-width: 136px;
     }
-    
+
     .submenu2:before {
         content: "";
         position: absolute;
@@ -1153,15 +1157,15 @@ table {
         border-left: 8px solid transparent;
         height: 100%;
     }
-    
+
     .submenu2_activator {
         position: relative;
     }
-    
+
     .submenu2_activator:hover .submenu2 {
         display: block;
     }
-    
+
     .test_menu2 {
         right: -10px;
         position: absolute;
@@ -1170,7 +1174,7 @@ table {
         height: 120px;
         background: none;
     }
-    
+
     .menu-items {
         padding: 0 10px;
         color: #000;
@@ -1181,7 +1185,7 @@ table {
     html {
         font-size: 0.9px;
     }
-} 
+}
 
 @media screen and (min-width: 1440px) {
     html {
@@ -1197,7 +1201,9 @@ table {
 
 
 @media screen and (min-width: 887px) {
-    .phone, .hataplus {
+
+    .phone,
+    .hataplus {
         padding-left: 0;
     }
 }
@@ -1216,4 +1222,3 @@ table {
     }
 
 }
-
