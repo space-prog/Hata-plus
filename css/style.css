@@ -500,9 +500,14 @@ h1 {
     column-gap: 50rem;
 }
 
-.logo img {
-    width: 17rem;
-    height: 17rem;
+.logo svg, .mail svg, .skype svg {
+    left: -15rem;
+    position: absolute;
+    fill: #fd8300;
+}
+
+.logo a {
+    position: relative;
 }
 
 .test {
@@ -535,15 +540,15 @@ h1 {
 } */
 
 a.fb {
-    width: 9rem;
-    height: 18rem;
+    width: 11rem;
+    height: 20rem;
     display: inline-block;
     fill: #fff;
 }
 
 a.tw {
-    width: 18rem;
-    height: 15rem;
+    width: 20rem;
+    height: 18rem;
     display: inline-block;
     fill: #fff;
 }
