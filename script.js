@@ -7,21 +7,18 @@ const openPopup = document.querySelector(".btn button"),
     menu = document.querySelector(".menu-burger"),
     cancel = document.querySelector(".cancel"),
     indexImg = document.querySelectorAll(".indexImg"),
-    phone = document.querySelector(".input_phone").value,
+    phone = document.querySelector(".input_phone"),
     // email = document.querySelector("input_phone").value,
     patterPhone = /^\+380\d{9}$/,
     // patternMail = /^[A-Za-z0-9]+([.\-_][A-Za-z0-9]+)*@[A-Za-z0-9]+([.\-][A-Za-z0-9]+)*\.[A-Za-z]{2,}$/gi,
     formRg = document.getElementById("formTg")
 
 formRg.addEventListener("submit", function (e) {
-    if (phone) {
-        patterPhone.test(phone)
-        if (patterPhone.test(phone)) {
-            
-        } else {
+    if (phone.value != "") {
+        
+        if (!patterPhone.test(phone.value)) {
             e.preventDefault()
-            return false
-        }
+        } 
     }
 })
 openPopup.addEventListener("click", function (e) {
