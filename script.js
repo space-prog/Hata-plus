@@ -6,8 +6,24 @@ const openPopup = document.querySelector(".btn button"),
     burger = document.querySelector(".burger"),
     menu = document.querySelector(".menu-burger"),
     cancel = document.querySelector(".cancel"),
-    indexImg = document.querySelectorAll(".indexImg")
+    indexImg = document.querySelectorAll(".indexImg"),
+    phone = document.querySelector(".input_phone").value,
+    // email = document.querySelector("input_phone").value,
+    patterPhone = /^\+380\d{9}$/,
+    // patternMail = /^[A-Za-z0-9]+([.\-_][A-Za-z0-9]+)*@[A-Za-z0-9]+([.\-][A-Za-z0-9]+)*\.[A-Za-z]{2,}$/gi,
+    formRg = document.getElementById("formTg")
 
+formRg.addEventListener("submit", function (e) {
+    if (phone) {
+        patterPhone.test(phone)
+        if (patterPhone.test(phone)) {
+            
+        } else {
+            e.preventDefault()
+            return false
+        }
+    }
+})
 openPopup.addEventListener("click", function (e) {
     e.preventDefault()
     blackBG.style.display = "block"
@@ -48,12 +64,12 @@ dark.onclick = () => {
 indexImg.forEach(img => {
     img.addEventListener("click", function () {
         let imgWidth = Math.ceil(img.getBoundingClientRect().width + 8),
-            imgHeight = Math.ceil(img.getBoundingClientRect().height + 8), 
-            imgX = Math.ceil(img.getBoundingClientRect().x + 8), 
+            imgHeight = Math.ceil(img.getBoundingClientRect().height + 8),
+            imgX = Math.ceil(img.getBoundingClientRect().x + 8),
             imgY = Math.ceil(img.getBoundingClientRect().y + 8),
             xPercent = (imgX * 100) / window.innerWidth,
             yPersent = (imgY * 100) / window.innerHeight
-        console.log(imgWidth, imgHeight, xPercent, yPersent,)
+        console.log(imgWidth, imgHeight, xPercent, yPersent, )
         popupImg.src = this.src
         popupImg.style.display = "block"
         popupImg.style.top = `${yPersent}%`
