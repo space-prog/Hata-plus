@@ -701,6 +701,7 @@ a.fb:hover {
 }
 
 .input_phone {
+    outline: none;
     margin-bottom: 23rem;
 }
 

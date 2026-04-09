@@ -13,14 +13,25 @@ const openPopup = document.querySelector(".btn button"),
     // patternMail = /^[A-Za-z0-9]+([.\-_][A-Za-z0-9]+)*@[A-Za-z0-9]+([.\-][A-Za-z0-9]+)*\.[A-Za-z]{2,}$/gi,
     formRg = document.getElementById("formTg")
 
-formRg.addEventListener("submit", function (e) {
+phone.addEventListener("input", function () {
     if (phone.value != "") {
-        
         if (!patterPhone.test(phone.value)) {
-            e.preventDefault()
-        } 
+            phone.style.border = "2px solid red"
+        } else {
+            phone.style.border = "2px solid green"
+        }
     }
 })
+
+formRg.addEventListener("submit", function (e) {
+    if (phone.value != "") {
+
+        if (!patterPhone.test(phone.value)) {
+            e.preventDefault()
+        }
+    }
+})
+
 openPopup.addEventListener("click", function (e) {
     e.preventDefault()
     blackBG.style.display = "block"
