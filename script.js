@@ -5,7 +5,8 @@ const openPopup = document.querySelector(".btn button"),
     dark = document.querySelector(".dark-bgc"),
     burger = document.querySelector(".burger"),
     menu = document.querySelector(".menu-burger"),
-    cancel = document.querySelector(".cancel")
+    cancel = document.querySelector(".cancel"),
+    indexImg = document.querySelectorAll(".indexImg")
 
 openPopup.addEventListener("click", function (e) {
     e.preventDefault()
@@ -34,5 +35,40 @@ function cancelBurger() {
     menu.style.left = "-100%";
     dark.style.display = "none"
 }
+
+dark.onclick = () => {
+    popupImg.style.display = "none"
+    popupImg.style.width = ""
+    popupImg.style.height = ""
+    popupImg.style.top = ""
+    popupImg.style.left = ""
+    popupImg.style.transform = "translate(0, 0)"
+}
+
+indexImg.forEach(img => {
+    img.addEventListener("click", function () {
+        let imgWidth = Math.ceil(img.getBoundingClientRect().width + 8),
+            imgHeight = Math.ceil(img.getBoundingClientRect().height + 8), 
+            imgX = Math.ceil(img.getBoundingClientRect().x + 8), 
+            imgY = Math.ceil(img.getBoundingClientRect().y + 8),
+            xPercent = (imgX * 100) / window.innerWidth,
+            yPersent = (imgY * 100) / window.innerHeight
+        console.log(imgWidth, imgHeight, xPercent, yPersent,)
+        popupImg.src = this.src
+        popupImg.style.display = "block"
+        popupImg.style.top = `${yPersent}%`
+        popupImg.style.left = `${xPercent}%`
+        popupImg.style.width = `${imgWidth}rem`
+        popupImg.style.height = `${imgHeight}rem`
+        dark.style.display = "block"
+        let interval = setInterval(() => {
+            popupImg.style.left = `50%`
+            popupImg.style.top = `50%`
+            popupImg.style.transform = `translate(-50%, -50%)`
+            clearInterval(interval)
+        }, 1)
+    })
+})
+
 cancel.addEventListener("click", cancelBurger)
 dark.addEventListener("click", cancelBurger)

@@ -989,6 +989,14 @@ table {
     height: 100%;
 }
 
+#popupImg {
+    display: none;
+    position: fixed;
+    transform: translate(0, 0);
+    z-index: 99;
+    transition: all .3s ease;
+}
+
 .submenu2_activator {
     position: relative;
 }
@@ -1219,6 +1227,10 @@ table {
 
 .homes img {
     width: 100%;
+}
+
+.indexImgHidden {
+    display: none;
 }
 
 @media screen and (min-width: 700px) {
