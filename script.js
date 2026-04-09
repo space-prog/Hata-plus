@@ -1,5 +1,6 @@
 const openPopup = document.querySelector(".btn button"),
     popupContainer = document.querySelector(".popup"),
+    sendBtn = document.querySelector(".send"),
     closePopup = document.querySelector(".close-popup"),
     blackBG = document.querySelector(".black"),
     dark = document.querySelector(".dark-bgc"),
@@ -8,10 +9,11 @@ const openPopup = document.querySelector(".btn button"),
     cancel = document.querySelector(".cancel"),
     indexImg = document.querySelectorAll(".indexImg"),
     phone = document.querySelector(".input_phone"),
-    // email = document.querySelector("input_phone").value,
     patterPhone = /^\+380\d{9}$/,
     // patternMail = /^[A-Za-z0-9]+([.\-_][A-Za-z0-9]+)*@[A-Za-z0-9]+([.\-][A-Za-z0-9]+)*\.[A-Za-z]{2,}$/gi,
-    formRg = document.getElementById("formTg")
+    formRg = document.getElementById("formTg"),
+    timeBar = document.querySelector(".timeBar"),
+    toast = document.querySelector(".toast")
 
 phone.addEventListener("input", function () {
     if (phone.value != "") {
@@ -25,9 +27,23 @@ phone.addEventListener("input", function () {
 
 formRg.addEventListener("submit", function (e) {
     if (phone.value != "") {
-
         if (!patterPhone.test(phone.value)) {
             e.preventDefault()
+
+            timeBar.style.transition = "none"
+            timeBar.style.width = "100%"
+
+            setTimeout(() => {
+                toast.style.opacity = "1"
+                toast.style.visibility = "visible"
+                timeBar.style.transition = "width 3s linear"
+                timeBar.style.width = "0"
+            }, 50)
+
+            setTimeout(() => {
+                toast.style.opacity = "0"
+                toast.style.visibility = "hidden"
+            }, 3000)
         }
     }
 })
