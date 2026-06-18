@@ -30,8 +30,8 @@ if($_POST) {
             $name = "ERROR IN MESSAGE";
         }
     
-        $token = "7176990752:AAFgJ-AVyV6WCpxgP9BqXjMyzUiYz8nFiJo";
-        $chat_id = 5858755336;
+        $token = "token";
+        $chat_id = 123456789;
     
         $name = urlencode("$name");
         $phone = urlencode("$phone");
